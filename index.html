@@ -30,28 +30,44 @@
 </head>
 <body>
     <header class="bg-amber-100  py-20 px-4 md:px-32">
-        <!-- nav section -->
-        <nav>
+     <!-- nav section -->
+<nav class="px-6 py-4">
 
-            <div class="  lg:flex justify-between  items-center ">
-                <div>
-                    <img class="w-80 h-16 " src="./images/icons/logo.png" alt="">
-                </div>
-                <div>
-                    <ul class=" hidden lg:flex justify-between gap-10">
-                        <li>Home </li>
-                        <li>Product</li>
-                        <li>About Us</li>
-                        <li>Contact US</li>
-                    </ul>
-                </div>
-            </div>
-            
+    <div class="flex justify-between items-center">
+        <div>
+            <img class="w-60 h-10" src="./images/icons/logo.png" alt="">
+        </div>
 
+        <!-- Mobile menu button (displayed on small screens) -->
+        <button class="lg:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
 
+        <!-- Desktop menu (hidden on small screens) -->
+        <div class="hidden lg:block">
+            <ul class="flex justify-between gap-10">
+                <li>Home</li>
+                <li>Product</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
 
+    <!-- Mobile menu (hidden on large screens) -->
+    <div class="hidden lg:hidden mt-4">
+        <ul class="flex flex-col gap-4">
+            <li>Home</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
 
-        </nav>
+</nav>
+
         <!-- banner section -->
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="space-y-3">
@@ -196,47 +212,45 @@
                 </div>
             </div>
         </section>
-
-        <!-- services section -->
-        <section class="py-12 flex flex-grow-1 align-middle justify-center">
-          
+<!-- services section -->
+<section class="lg:flex flex-wrap lg:justify-center">
+    <div class="lg:w-1/2">
+        <div class="lg:flex lg:mr-10 lg:mb-0 mb-5 shadow-lg rounded-xl p-5">
+            <img class="w-20 h-20 mr-7" src="./images/icons/house.png" alt="">
             <div>
-                <div class="flex mr-28  shadow-lg rounded-xl p-5">
-                    <img class="w-20 h-20 mr-7" src="./images/icons/house.png" alt="">
-                    <div>
-                        <h1 class="text-2xl font-bold text-color mb-3">
-                            Find the Perfect Fit
-                        </h1>
-                        <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
-                            offer styles for every body.</p>
-                    </div>
-                </div>
-                <div class="flex mr-28  shadow-lg rounded-xl p-5">
-                    <img class="w-20 h-20 mr-7" src="./images/icons/box.png" alt="">
-                    <div>
-                        <h1 class="text-2xl font-bold text-color mb-3">
-                            Free Exchanges
-                        </h1>
-                        <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
-                            offer styles for every body.</p>
-                    </div>
-                </div>
-                <div class="flex mr-28  shadow-lg rounded-xl p-5">
-                    <img class="w-20 h-20 mr-7" src="./images/icons/question.png" alt="">
-                    <div>
-                        <h1 class="text-2xl font-bold text-color mb-3">
-                            Contact Our Seller
-                        </h1>
-                        <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
-                            offer styles for every body.</p>
-                    </div>
-                </div>
+                <h1 class="text-2xl font-bold text-color mb-3">
+                    Find the Perfect Fit
+                </h1>
+                <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
+                    offer styles for every body.</p>
             </div>
-            <div class="w-1/2">
-                <img class="" src="./images/shopping.png" alt="">
+        </div>
+        <div class=" lg:flex lg:mr-10 lg:mb-0 mb-5 shadow-lg rounded-xl p-5">
+            <img class=" w-20 h-20 mr-7" src="./images/icons/box.png" alt="">
+            <div>
+                <h1 class="text-2xl font-bold text-color mb-3">
+                    Free Exchanges
+                </h1>
+                <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
+                    offer styles for every body.</p>
             </div>
+        </div>
+        <div class="lg:flex lg:mr-10 lg:mb-0 shadow-lg rounded-xl p-5">
+            <img class="w-20 h-20 mr-7" src="./images/icons/question.png" alt="">
+            <div>
+                <h1 class="text-2xl font-bold text-color mb-3">
+                    Contact Our Seller
+                </h1>
+                <p class="text-color text-base font-normal">Everybody is different, which is why we <br>
+                    offer styles for every body.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 lg:w-1/2">
+        <img class="w-full" src="./images/shopping.png" alt="">
+    </div>
+</section>
 
-        </section>
     </main>
     <footer>
 
